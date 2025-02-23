@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="resmenu.css">
+    <style type="text/css">
+        
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Paucek and Lage Restaurant</h1>
+        <h2>Food Menu</h2>
+        <input type="text" id="search" placeholder="Search menu..." onkeyup="filterMenu()">
+<select id="category" onchange="filterCategory()">
+    <option value="all">All</option>
+    <option value="food">Food</option>
+    <option value="beverage">Beverages</option>
+    <option value="dessert">Desserts</option>
+</select>
+<button onclick="toggleDarkMode()">Dark Mode</button>
+
+    </header>
+    <section class="menu">
+        <div class="menu-item">
+            <img src="grillsalman.jpeg" alt="Grilled Salmon">
+            <h3>Grilled Salmon - $18.99</h3>
+            <p>Fresh salmon fillet seasoned with herbs and grilled to perfection...</p>
+        </div>
+        <div class="menu-item">
+            <img src="vegetable.jpeg" alt="Vegetable Pad Thai">
+            <h3>Vegetable Pad Thai - $13.99</h3>
+            <p>Stir-fried rice noodles with fresh vegetables, tofu, bean sprouts...</p>
+        </div>
+     
+        <div class="menu-item">
+            <img src="mushroom.jpeg" alt="Mushroom Risotto">
+            <h3>Mushroom Risotto - $14.99</h3>
+            <p>Creamy rice cooked with mushrooms, garlic, shallots, and Parmesan...</p>
+        </div>
+    </section>
+    <section class="menu">
+        <div class="menu-item">
+            <img src="grillchicken.jpeg" alt="Grilled Chicken">
+            <h3>Grilled Chicken - $12.99</h3>
+            <p>Grilled chicken breast served atop crisp lettuce...</p>
+        </div>
+
+   
+            <div class="menu-item">
+            <img src="classic beef.jpeg" alt="Classic Beef">
+            <h3>Classic Beef - $16.99</h3>
+            <p>Layers of tomato sauce, seasoned ground beef, lasagna noodles...</p>
+        </div>
+        <div class="menu-item">
+            <img src="eggplant.jpeg" alt="Eggplant Parmesan">
+            <h3>Eggplant Parmesan - $15.99</h3>
+            <p>Slices of breaded eggplant, fried crispy and layered with marinara...</p>
+        </div>
+    </section>
+    <section class="extras">
+        <h2>Beverages</h2>
+        <ul>
+            <li>Classic Margarita - $3.99</li>
+            <li>Mango Mocktail - $2.99</li>
+            <li>Iced Caramel Macchiato - $4.99</li>
+        </ul>
+        <h2>Desserts</h2>
+        <ul>
+            <li>Chocolate Mousse - $5.99</li>
+            <li>Apple Pie - $7.99</li>
+            <li>Cheesecake - $5.99</li>
+        </ul>
+    </section>
+    <script src="resmenu.js"></script>
+</body>
+</html>
